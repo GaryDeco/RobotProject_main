@@ -1,10 +1,18 @@
 #include "msp.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "test.h"
 
 
-/**
- * main.c
- */
-void main(void)
+
+
+int main(void)
+
 {
-	printf("Hello World");
+
+    test_console_msg();
+
 }
+
+
