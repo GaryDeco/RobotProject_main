@@ -1,19 +1,21 @@
-#include "msp.h"
+//-- Standard library--//
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "test.h"
-#include "bump.h"
+//-- CCS generated --//
+#include "msp.h"
+//-- built --//
+//#include "test.h"
+//#include "bump.h"
+//-------- Definitions --------//
 
-
-
-
+//----------- Main ------------//
 int main(void)
 
 {
 
-    test_console_msg();
-    bump_console_msg();
+    //test_console_msg(); // msg from test.c,test.h
 
 
 }

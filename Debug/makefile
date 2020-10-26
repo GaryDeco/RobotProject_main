@@ -146,7 +146,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 RobotProject_main.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"E:/ti/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=all --define=__MSP432P401R__ --define=ccs -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"RobotProject_main.map" --heap_size=1024 --stack_size=512 -i"E:/ti/ccs/ccs_base/arm/include" -i"E:/ti/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"E:/ti/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="RobotProject_main_linkInfo.xml" --rom_model -o "RobotProject_main.out" $(ORDERED_OBJS)
+	"E:/ti/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power="all" --define=__MSP432P401R__ --define=ccs -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"RobotProject_main.map" --heap_size=1024 --stack_size=512 -i"E:/ti/ccs/ccs_base/arm/include" -i"E:/ti/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"E:/ti/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="RobotProject_main_linkInfo.xml" --rom_model -o "RobotProject_main.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
