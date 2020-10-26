@@ -8,6 +8,7 @@
 //-- built --//
 #include "test.h"
 #include "bump.h"
+#include "io.h"
 //#include "bump.h"
 //-------- Definitions --------//
 
@@ -18,6 +19,8 @@ int main(void)
 
     test_console_msg(); // msg from test.c,test.h
     bump_console_msg(); // msg from test.c,test.h
+    io_console_msg(); // msg from test.c,test.h
+    return 0; // eliminate exit.c
 
 }
 
