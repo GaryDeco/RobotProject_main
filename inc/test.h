@@ -3,7 +3,7 @@
 #ifndef TEST_H
 #define TEST_H
 
-#define TEST_MSG "\n-- Test Message --"
+#define TEST_MSG "\n-- Test Message [test.h] --"
 #define EPS .005
 
 

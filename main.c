@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "test.h"
+#include "bump.h"
 
 
 
@@ -12,6 +13,8 @@ int main(void)
 {
 
     test_console_msg();
+    bump_console_msg();
+
 
 }
 
